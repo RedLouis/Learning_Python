@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore Lists and Loops in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h2>Explore Lists and Loops in Python</h2>
+    <p>
+        In Python, a list is a versatile data structure used to store collections of items. Lists are mutable, meaning you can modify, add, or remove elements from them after creation. Lists are denoted by square brackets [] and elements inside a list are separated by commas.
+    </p>
+    <p>
+        Common List Operations:
+        <ul>
+            <li>Accessing Elements: You can access individual elements in a list using their index. Indexing starts from 0 for the first element, 1 for the second element, and so on. Negative indexing allows you to access elements from the end of the list, starting with -1 for the last element.</li>
+            <li>Slicing: You can create a sublist (slice) by specifying a range of indices. Slicing allows you to extract a portion of the list.</li>
+            <li>Appending and Extending: You can add elements to the end of a list using the append() method. To add multiple elements from another iterable (e.g., another list), you can use the extend() method.</li>
+            <li>Inserting: You can insert elements at a specific index using the insert() method.</li>
+            <li>Removing Elements: You can remove elements from a list using the remove() method or by using the pop() method to remove an element at a specific index.</li>
+            <li>Looping through Lists: Loops, such as for and while, are used to iterate through lists and perform operations on each element.</li>
+        </ul>
+    </p>
+    <h3>Examples of Looping Through a List:</h3>
+    <p><strong>Using a While Loop:</strong></p>
+    <pre class="exercises">
+        numbers = [1, 2, 3, 4, 5]
+        i = 0
+        while i &lt; len(numbers):
+            print(numbers[i])
+            i += 1
+    </pre>
+    <p><strong>Using a For Loop:</strong></p>
+    <pre class="exercises">
+        numbers = [1, 2, 3, 4, 5]
+        for num in numbers:
+            print(num)
+    </pre>
+
+    <p><strong>Instructions:</strong></p>
+    <p>
+        To work on the exercises, you can write Python code in your favorite text editor or IDE (Integrated Development Environment). Save the code in a .py file and run it using the Python interpreter. Observe the outputs and verify that the results match the expected outputs mentioned in each exercise.
+    </p>
+    <h3>Exercises:</h3>
+    <ol>
+        <li>
+            <strong>Sum of Elements:</strong>
+            <pre class="exercises">
+                Input: [1, 2, 3, 4, 5]
+                Output: 15
+            </pre>
+        </li>
+        <li>
+            <strong>Finding Maximum and Minimum:</strong>
+            <pre class="exercises">
+                Input: [10, 5, 25, 8, 20]
+                Output: Maximum: 25, Minimum: 5
+            </pre>
+        </li>
+        <li>
+            <strong>Square All Elements:</strong>
+            <pre class="exercises">
+                Input: [1, 2, 3, 4, 5]
+                Output: [1, 4, 9, 16, 25]
+            </pre>
+        </li>
+        <li>
+            <strong>Remove Duplicates:</strong>
+            <pre class="exercises">
+                Input: [1, 2, 2, 3, 4, 4, 5]
+                Output: [1, 2, 3, 4, 5]
+            </pre>
+        </li>
+        <li>
+            <strong>List Comprehension - Even Numbers:</strong>
+            <pre class="exercises">
+                Input: [1, 2, 3, 4, 5, 6]
+                Output: [2, 4, 6]
+            </pre>
+        </li>
+        <li>
+            <strong>Reverse List:</strong>
+            <pre class="exercises">
+                Input: [1, 2, 3, 4, 5]
+                Output: [5, 4, 3, 2, 1]
+            </pre>
+        </li>
+        <li>
+            <strong>Count Occurrences:</strong>
+            <pre class="exercises">
+                Input: [1, 2, 2, 3, 4, 4, 5], Element: 2
+                Output: 2
+            </pre>
+        </li>
+        <li>
+            <strong>Join Lists:</strong>
+            <pre class="exercises">
+                Input: [1, 2, 3], [4, 5, 6]
+                Output: [1, 2, 3, 4, 5, 6]
+            </pre>
+        </li>
+    </ol>
+    <h2>How to Loop over Lists in Python YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ueMumuFv6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="advanced_functions.html">Back to previous topic</a>
+        <a href="string_manipulation.html">Next topic</a>
+    </div>
+</body>
+</html>

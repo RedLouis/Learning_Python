@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exception Handling in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h2>Exception Handling in Python</h2>
+    <p>
+        Exception handling is an essential aspect of writing robust and reliable code in Python. It allows you to gracefully handle errors and unexpected situations that may arise during the execution of your program.
+    </p>
+
+    <h3>Try-Except Block:</h3>
+    <pre class="code-example">
+        <code>
+            # Example of try-except block
+            try:
+                result = 10 / 0  # This will raise a ZeroDivisionError
+            except ZeroDivisionError as e:
+                print("Error:", e)
+        </code>
+    </pre>
+
+    <h3>Handling Multiple Exceptions:</h3>
+    <pre class="code-example">
+        <code>
+            # Example of handling multiple exceptions
+            try:
+                num = int(input("Enter a number: "))
+                result = 10 / num
+            except ZeroDivisionError as e:
+                print("Error: Cannot divide by zero.")
+            except ValueError as e:
+                print("Error: Invalid input. Please enter a valid number.")
+        </code>
+    </pre>
+
+    <h3>Finally Block:</h3>
+    <pre class="code-example">
+        <code>
+            # Example of using the finally block
+            try:
+                # Code that might raise an exception
+            except SomeException as e:
+                # Exception handling
+            finally:
+                # Cleanup code, always executed
+        </code>
+    </pre>
+
+    <h3>Custom Exceptions:</h3>
+    <pre class="code-example">
+        <code>
+            # Example of a custom exception
+            class CustomError(Exception):
+                pass
+
+            try:
+                raise CustomError("This is a custom exception.")
+            except CustomError as e:
+                print("Custom Error:", e)
+        </code>
+    </pre>
+
+    <h3>Exception Handling Exercise:</h3>
+    <pre class="code-example">
+        <code>
+            # Exercise: Exception Handling for Division
+            try:
+                num1 = int(input("Enter the first number: "))
+                num2 = int(input("Enter the second number: "))
+                result = num1 / num2
+                print("Result:", result)
+            except ValueError:
+                print("Error: Invalid input. Please enter valid numbers.")
+            except ZeroDivisionError:
+                print("Error: Cannot divide by zero.")
+        </code>
+    </pre>
+
+    <p>
+        Exception handling is an important skill to ensure your code can gracefully recover from errors and prevent program crashes. Use exception handling to handle potential errors and maintain the reliability of your Python programs.
+    </p>
+    <h2>Using Try/Except Blocks for Error Handling YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NIWwJbo-9_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="file_handling.html">Back to previous topic</a>
+        <a href="dictonaries_sets.html">Next topic</a>
+    </div>
+</body>
+</html>

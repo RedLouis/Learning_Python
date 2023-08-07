@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Handling in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h2>File Handling in Python</h2>
+    <p>
+        File handling in Python is a fundamental skill that allows you to interact with external files on your computer. Reading from and writing to files is essential for various data processing tasks and for working with external resources, such as databases or configuration files.
+    </p>
+
+    <h3>Reading from Files:</h3>
+    <pre class="code-example">
+        <code>
+            # Example of reading from a text file
+            with open('example.txt', 'r') as file:
+                content = file.read()
+                print(content)
+        </code>
+    </pre>
+
+    <h3>Writing to Files:</h3>
+    <pre class="code-example">
+        <code>
+            # Example of writing to a text file
+            with open('output.txt', 'w') as file:
+                file.write('Hello, World!')
+        </code>
+    </pre>
+
+    <h3>File Handling Exercise:</h3>
+    <p>
+        Exercise: Summing numbers from a file and writing the result to another file. Follow these steps to work on the exercise:
+        <ol>
+            <li>Create a text file named "data.txt" in the same directory as this Python script.</li>
+            <li>In the "data.txt" file, write a list of numbers (one number per line).</li>
+            <li>Write a Python script to read the numbers from "data.txt" and calculate their sum.</li>
+            <li>Open another file named "result.txt" in write mode and write the calculated sum into it.</li>
+            <li>Run your Python script and check if "result.txt" contains the correct sum.</li>
+        </ol>
+    </p>
+
+    <p>
+        File handling is a powerful feature in Python that allows you to work with various file formats and external resources. Remember to always close the file using the <code>with</code> statement or the <code>close()</code> method to free up system resources after you finish reading or writing. Additionally, make sure to handle exceptions appropriately to handle potential errors during file operations.
+    </p>
+    <h2>File Handling In Python YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DmHSwTiD5Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="phase3_intro.html">Back to Phase 3 intro</a>
+        <a href="exception_handling.html">Next topic</a>
+    </div>
+</body>
+</html>

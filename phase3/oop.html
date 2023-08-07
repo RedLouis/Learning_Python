@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object-Oriented Programming (OOP) in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h2>Object-Oriented Programming (OOP) in Python</h2>
+    <p>
+        Object-Oriented Programming (OOP) is a programming paradigm that allows you to organize your code into classes and objects. OOP helps you model real-world entities and define their behaviors and attributes.
+    </p>
+
+    <h3>Classes and Objects:</h3>
+    <p>
+        A class is a blueprint for creating objects. It defines a template with attributes (data) and methods (functions) that objects of that class will have. An object is an instance of a class, created using the class constructor.
+    </p>
+    <pre class="code-example">
+        <code>
+            # Example of a simple class and object
+            class Person:
+                def __init__(self, name, age):
+                    self.name = name
+                    self.age = age
+
+                def say_hello(self):
+                    print(f"Hello, my name is {self.name} and I'm {self.age} years old.")
+
+            # Creating an object of the class Person
+            person1 = Person("John Doe", 30)
+            person1.say_hello()  # Output: Hello, my name is John Doe and I'm 30 years old.
+        </code>
+    </pre>
+
+    <h3>Inheritance:</h3>
+    <p>
+        Inheritance allows you to create a new class (subclass) based on an existing class (superclass). The subclass inherits attributes and methods from the superclass, enabling code reuse and extending functionality.
+    </p>
+    <pre class="code-example">
+        <code>
+            # Example of inheritance
+            class Student(Person):
+                def __init__(self, name, age, student_id):
+                    super().__init__(name, age)
+                    self.student_id = student_id
+
+                def say_hello(self):
+                    print(f"Hello, I'm {self.name}, a student with ID {self.student_id}.")
+
+            # Creating an object of the class Student
+            student1 = Student("Jane Smith", 25, "12345")
+            student1.say_hello()  # Output: Hello, I'm Jane Smith, a student with ID 12345.
+        </code>
+    </pre>
+
+    <h3>Encapsulation:</h3>
+    <p>
+        Encapsulation is the concept of restricting access to certain parts of an object or class. It helps protect data from unwanted modification and defines public and private attributes and methods.
+    </p>
+    <pre class="code-example">
+        <code>
+            # Example of encapsulation
+            class BankAccount:
+                def __init__(self, account_number, balance):
+                    self.account_number = account_number
+                    self.__balance = balance  # Private attribute
+
+                def get_balance(self):
+                    return self.__balance
+
+                def deposit(self, amount):
+                    self.__balance += amount
+
+                def withdraw(self, amount):
+                    if amount <= self.__balance:
+                        self.__balance -= amount
+                    else:
+                        print("Insufficient funds.")
+
+            # Creating an object of the class BankAccount
+            account1 = BankAccount("123456", 1000)
+            print("Account Balance:", account1.get_balance())  # Output: Account Balance: 1000
+            account1.deposit(500)
+            print("Account Balance after Deposit:", account1.get_balance())  # Output: Account Balance after Deposit: 1500
+            account1.withdraw(2000)  # Output: Insufficient funds.
+        </code>
+    </pre>
+
+    <h3>OOP Exercise:</h3>
+    <p>
+        Exercise: Create a class called "Rectangle" with attributes "length" and "width". Implement a method to calculate the area of the rectangle. Then, create a subclass called "Square" that inherits from "Rectangle" and has an additional method to calculate the perimeter of the square.
+    </p>
+    <pre class="code-example">
+        <code>
+            # Exercise: Creating a Rectangle class and a Square subclass
+            class Rectangle:
+                def __init__(self, length, width):
+                    self.length = length
+                    self.width = width
+
+                def calculate_area(self):
+                    return self.length * self.width
+
+            class Square(Rectangle):
+                def calculate_perimeter(self):
+                    return 4 * self.length
+
+            # Creating objects of the classes and using their methods
+            rectangle1 = Rectangle(5, 3)
+            print("Rectangle Area:", rectangle1.calculate_area())  # Output: Rectangle Area: 15
+
+            square1 = Square(4, 4)
+            print("Square Area:", square1.calculate_area())  # Output: Square Area: 16
+            print("Square Perimeter:", square1.calculate_perimeter())  # Output: Square Perimeter: 16
+        </code>
+    </pre>
+
+    <p>
+        Object-Oriented Programming allows you to create reusable, organized, and structured code. By understanding classes, objects, inheritance, and encapsulation, you can model complex systems and build efficient and scalable Python applications.
+    </p>
+    <h2>Object Oriented Programming with Python - Full Course for Beginners YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ej_02ICOIgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="writing_clean.html">Back to previous topic</a>
+        <a href="../phase4/phase4_intro.html">Next phase</a>
+    </div>
+</body>
+</html>

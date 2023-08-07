@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Defining and Calling Functions in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Defining and Calling Functions in Python</h1>
+
+    <h2>Functions:</h2>
+    <p>
+        Functions in Python are blocks of reusable code that perform specific tasks. They allow you to break your program into smaller, more manageable pieces, making the code more organized and easier to maintain. Functions also promote code reusability, as you can call them multiple times from different parts of your program.
+    </p>
+
+    <h2>Defining a Function:</h2>
+    <p>
+        You can define a function in Python using the <code>def</code> keyword, followed by the function name, parentheses, and a colon. The code block that follows the colon is the function body, where you write the code to execute when the function is called.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Defining a simple function
+            def greet():
+                print("Hello, welcome!")
+
+            # Defining a function with parameters
+            def add(a, b):
+                return a + b
+        </code>
+    </pre>
+
+    <h2>Calling a Function:</h2>
+    <p>
+        To use a function, you call it by its name followed by parentheses, optionally passing arguments inside the parentheses for functions that accept parameters.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Calling the greet() function
+            greet()
+
+            # Calling the add() function with arguments
+            result = add(5, 3)
+            print("Sum:", result)
+        </code>
+    </pre>
+
+    <h2>Returning Values:</h2>
+    <p>
+        Functions can also return values using the <code>return</code> keyword. When a function is called and returns a value, you can assign the result to a variable or use it directly in your code.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Function with return value
+            def square(x):
+                return x * x
+
+            # Calling the square() function and using the returned value
+            num = 4
+            squared_num = square(num)
+            print("Square of", num, "is", squared_num)
+        </code>
+    </pre>
+
+    <p>
+        Defining and calling functions is a fundamental concept in Python programming that enables you to modularize your code and create more organized and efficient programs.
+    </p>
+    <h2>Functions in Python are easy YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/89cGQjB5R4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="understanding_membership_operarors.html">Back to previous topic</a>
+        <a href="passing_arguments.html">Next topic</a>
+    </div>
+</body>
+</html>

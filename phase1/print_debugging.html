@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using Print Statements and Debugging Tools in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Using Print Statements and Debugging Tools in Python</h1>
+
+    <h2>Using Print Statements:</h2>
+    <p>
+        Print statements are a simple yet powerful way to debug your Python code. By inserting print statements at strategic points in your code, you can inspect variable values, check if certain conditions are met, or track the flow of your program's execution.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Example of using print statements for debugging
+            def factorial(n):
+                result = 1
+                for i in range(1, n + 1):
+                    result *= i
+                    print(f"i: {i}, result: {result}")
+                return result
+
+            # Calling the factorial() function
+            print(factorial(5))
+        </code>
+    </pre>
+
+    <h2>Using Debugging Tools:</h2>
+    <p>
+        Python offers various debugging tools that can help you identify and fix issues in your code more efficiently than using print statements alone. Some popular Python debugging tools include:
+    </p>
+    <ul>
+        <li><strong>1. pdb (Python Debugger):</strong> The built-in Python debugger, which allows you to set breakpoints, inspect variables, and step through your code line by line.</li>
+        <li><strong>2. PyCharm Debugger:</strong> If you are using the PyCharm IDE, it provides a powerful graphical debugger with features like variable inspection, stepping, and watches.</li>
+        <li><strong>3. VSCode Debugger:</strong> Visual Studio Code also has a built-in debugger that allows you to debug Python code using breakpoints and variable inspection.</li>
+        <li><strong>4. Thonny Debugger:</strong> Thonny is a beginner-friendly Python IDE that includes an easy-to-use debugger for stepping through code and inspecting variables.</li>
+    </ul>
+
+    <h2>Example of Using pdb:</h2>
+    <pre class="exercises">
+        <code>
+            # Using pdb for debugging
+            import pdb
+
+            def divide(a, b):
+                pdb.set_trace()  # Set a breakpoint
+                result = a / b
+                return result
+
+            # Calling the divide() function
+            print(divide(10, 2))
+        </code>
+    </pre>
+
+    <p>
+        Using print statements and debugging tools, such as Thonny, can significantly improve your ability to identify and resolve bugs in your Python code, making the development process smoother and more productive.
+    </p>
+    <h2>Debugging with Pycharm YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sRGpvbhOhQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="common_errors.html">Back to previous topic</a>
+        <a href="coding_conventions.html">Next topic</a>
+    </div>
+</body>
+</html>

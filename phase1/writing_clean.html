@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Writing Clean, Readable, and Maintainable Code in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Writing Clean, Readable, and Maintainable Code in Python</h1>
+
+    <h2>Why Write Clean Code?</h2>
+    <p>
+        Writing clean code is crucial for ensuring that your Python programs are easy to read, understand, and maintain. Clean code reduces complexity, makes it easier to identify and fix issues, and enhances collaboration among team members.
+    </p>
+
+    <h2>Best Practices for Clean Code:</h2>
+    <ul>
+        <li><strong>1. Use Descriptive Names:</strong> Choose meaningful names for variables, functions, and classes that convey their purpose and make the code self-explanatory.</li>
+        <li><strong>2. Break Code into Small Functions:</strong> Divide complex tasks into smaller, focused functions that have a single responsibility. This improves code readability and reusability.</li>
+        <li><strong>3. Keep Functions Short:</strong> Aim for shorter functions with a limited number of lines of code. This makes it easier to comprehend the entire function at a glance.</li>
+        <li><strong>4. Avoid Deep Nesting:</strong> Reduce the level of nesting in your code to avoid complex and confusing structures.</li>
+        <li><strong>5. Use Comments Sparingly:</strong> Use comments to explain complex logic or clarify non-obvious code. Avoid unnecessary comments that merely repeat what the code does.</li>
+        <li><strong>6. Follow PEP 8 Guidelines:</strong> Adhere to the PEP 8 style guide to maintain consistent code formatting and improve readability.</li>
+        <li><strong>7. Refactor Regularly:</strong> Regularly review and refactor your code to improve its design and remove duplication.</li>
+    </ul>
+
+    <pre class="exercises">
+        <code>
+            # Example of writing clean code
+
+            def calculate_sum(a, b):
+                # Calculate the sum of two numbers
+                return a + b
+
+            def greet_user(name):
+                # Greet the user with a friendly message
+                print(f"Hello, {name}!")
+
+            def main():
+                # Main function to execute the program
+                num1 = 5
+                num2 = 10
+                total = calculate_sum(num1, num2)
+                greet_user("Alice")
+                print("The total sum is:", total)
+
+            # Call the main function to start the program
+            main()
+        </code>
+    </pre>
+
+    <p>
+        Writing clean, readable, and maintainable code in Python not only benefits you as the developer but also improves the codebase's overall quality and makes it more accessible and comprehensible to other team members or collaborators.
+    </p>
+    <h2>How To Write Cleaner Code YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F14BKKHeAKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="coding_conventions.html">Back to previous topic</a>
+        <a href="project_calculator.html">Next topic</a>
+    </div>
+</body>
+</html>

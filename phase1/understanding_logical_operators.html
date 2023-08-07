@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Understanding Logical Operators in Python: and, or, not</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Understanding Logical Operators in Python: and, or, not</h1>
+
+    <h2>Logical Operators:</h2>
+    <p>
+        Logical operators in Python are used to perform logical operations on boolean values (True or False). There are three main logical operators:
+    </p>
+    <ul>
+        <li><code>and</code>: Returns True if both operands are True.</li>
+        <li><code>or</code>: Returns True if at least one of the operands is True.</li>
+        <li><code>not</code>: Returns True if the operand is False, and False if the operand is True.</li>
+    </ul>
+
+    <h2>Examples:</h2>
+    <p>
+        Let's see some examples of using logical operators in Python:
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using the 'and' operator
+            x = 10
+            y = 5
+            z = 15
+            result = (x > y) and (y < z)
+            print(result)
+
+            # Using the 'or' operator
+            a = 20
+            b = 25
+            c = 30
+            result = (a < b) or (b < c)
+            print(result)
+
+            # Using the 'not' operator
+            is_raining = True
+            is_sunny = not is_raining
+            print(is_sunny)
+        </code>
+    </pre>
+
+    <h2>Order of Evaluation:</h2>
+    <p>
+        Logical operators are evaluated from left to right, and their evaluation stops as soon as the result is determined. This behavior is known as "short-circuiting."
+    </p>
+    <pre class="exercises">
+        <code>
+            # Short-circuiting with the 'and' operator
+            def perform_action():
+                print("Action performed.")
+                return True
+
+            result = False and perform_action()
+            # Output: False (perform_action() is not called because the first operand is False)
+
+            # Short-circuiting with the 'or' operator
+            def another_action():
+                print("Another action performed.")
+                return True
+
+            result = True or another_action()
+            # Output: True (another_action() is not called because the first operand is True)
+        </code>
+    </pre>
+
+    <p>
+        Understanding logical operators is essential for making complex decisions and controlling the flow of your Python programs based on multiple conditions.
+    </p>
+    <h2>Comparison, Logical, and Membership Operators in Python YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lPVke-p4S7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="understanding_comparison_operators.html">Back to previous topic</a>
+        <a href="combining_logical_operators.html">Next topic</a>
+    </div>
+</body>
+</html>

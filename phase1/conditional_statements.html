@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction to Conditional Statements in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Introduction to Conditional Statements in Python</h1>
+
+    <h2>Conditional Statements:</h2>
+    <p>
+        Conditional statements allow you to make decisions in your Python programs based on certain conditions. The most common conditional statements in Python are <code>if</code>, <code>else</code>, and <code>elif</code> (short for "else if").
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using if statement
+            age = 18
+            if age >= 18:
+                print("You are an adult.")
+
+            # Using if-else statement
+            score = 85
+            if score >= 60:
+                print("Congratulations! You passed.")
+            else:
+                print("Unfortunately, you didn't pass.")
+
+            # Using if-elif-else statement
+            num = 7
+            if num > 0:
+                print("Positive")
+            elif num < 0:
+                print("Negative")
+            else:
+                print("Zero")
+        </code>
+    </pre>
+
+    <h2>Indentation and Colon:</h2>
+    <p>
+        In Python, the blocks of code within the conditional statements are defined by indentation, not curly braces as in some other programming languages. Additionally, the colon (<code>:</code>) at the end of the <code>if</code>, <code>else</code>, and <code>elif</code> lines indicate the beginning of a new block of code.
+    </p>
+
+    <h2>Nesting Conditional Statements:</h2>
+    <p>
+        You can also nest conditional statements inside each other to create more complex decision-making logic.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Nested if-else statement
+            age = 22
+            if age >= 18:
+                print("You are an adult.")
+                if age >= 21:
+                    print("You can legally drink.")
+                else:
+                    print("You cannot legally drink.")
+            else:
+                print("You are a minor.")
+
+            # Nested if-elif-else statement
+            num = -5
+            if num > 0:
+                print("Positive")
+            elif num < 0:
+                print("Negative")
+                if num % 2 == 0:
+                    print("Even")
+                else:
+                    print("Odd")
+            else:
+                print("Zero")
+        </code>
+    </pre>
+
+    <p>
+        Understanding conditional statements is fundamental to creating dynamic and responsive Python programs that can adapt to different situations and conditions.
+    </p>
+    <h2>Control Flow in Python - If Elif Else Statements YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zp5MuPOtsSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="string_methods.html">Back to previous topic</a>
+        <a href="decision_making.html">Next topic</a>
+    </div>
+    
+</body>
+</html>

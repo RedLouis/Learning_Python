@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Manipulation in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h2>String Manipulation in Python</h2>
+    <p>
+        String manipulation is a crucial aspect of working with textual data in Python. Strings are sequences of characters and are immutable, meaning they cannot be changed after they are created. Python provides various string manipulation techniques to perform operations like slicing, concatenation, formatting, and utilizing built-in string methods to modify and manipulate strings efficiently.
+    </p>
+    <h3>Common String Manipulation Techniques:</h3>
+    <ul>
+        <li>Slicing: Slicing allows you to extract a substring from a string based on its indices. You can use slicing to get a specific portion of a string.</li>
+        <li>Concatenation: Concatenation is the process of combining two or more strings to create a new string. You can concatenate strings using the + operator.</li>
+        <li>String Formatting: String formatting allows you to construct dynamic strings by inserting values into placeholders. Python supports several ways of string formatting, including f-strings, str.format(), and % operator.</li>
+        <li>Built-in String Methods: Python provides a variety of built-in string methods like upper(), lower(), replace(), split(), find(), count(), and more, which allow you to manipulate and analyze strings efficiently.</li>
+    </ul>
+
+    <h3>1. Slicing:</h3>
+    <pre class="code-example">
+        <code>
+            # Slicing allows you to extract a substring from a string based on its indices.
+            text = "Hello, World!"
+            # Extract the substring "Hello"
+            substring1 = text[0:5]
+            # Extract the substring "World!"
+            substring2 = text[7:]
+            print(substring1)  # Output: "Hello"
+            print(substring2)  # Output: "World!"
+        </code>
+    </pre>
+
+    <h3>2. Concatenation:</h3>
+    <pre class="code-example">
+        <code>
+            # Concatenation is the process of combining two or more strings to create a new string.
+            first_name = "John"
+            last_name = "Doe"
+            full_name = first_name + " " + last_name
+            print(full_name)  # Output: "John Doe"
+        </code>
+    </pre>
+
+    <h3>3. String Formatting:</h3>
+    <pre class="code-example">
+        <code>
+            # String formatting allows you to construct dynamic strings by inserting values into placeholders.
+            name = "Alice"
+            age = 30
+            # Using f-string (Python 3.6+)
+            formatted_string1 = f"My name is {name} and I am {age} years old."
+            # Using str.format()
+            formatted_string2 = "My name is {} and I am {} years old.".format(name, age)
+            # Using % operator (old style)
+            formatted_string3 = "My name is %s and I am %d years old." % (name, age)
+            print(formatted_string1)  # Output: "My name is Alice and I am 30 years old."
+            print(formatted_string2)  # Output: "My name is Alice and I am 30 years old."
+            print(formatted_string3)  # Output: "My name is Alice and I am 30 years old."
+        </code>
+    </pre>
+
+    <h3>4. Built-in String Methods:</h3>
+    <pre class="code-example">
+        <code>
+            # Python provides a variety of built-in string methods for string manipulation.
+            text = "Hello, World!"
+            # Convert to uppercase
+            uppercase_text = text.upper()
+            # Convert to lowercase
+            lowercase_text = text.lower()
+            # Replace "Hello" with "Hi"
+            replaced_text = text.replace("Hello", "Hi")
+            # Split the string into a list of words
+            words = text.split()
+            # Find the index of "World" in the string
+            index = text.find("World")
+            # Count the occurrences of "l" in the string
+            count_l = text.count("l")
+            print(uppercase_text)  # Output: "HELLO, WORLD!"
+            print(lowercase_text)  # Output: "hello, world!"
+            print(replaced_text)   # Output: "Hi, World!"
+            print(words)           # Output: ['Hello,', 'World!']
+            print(index)           # Output: 7
+            print(count_l)         # Output: 3
+        </code>
+    </pre>
+
+    <h3>Instructions:</h3>
+    <p>
+        To work on the exercises, follow these steps:
+        <ol>
+            <li>Read the problem statement for each exercise and understand the expected input and output.</li>
+            <li>Write Python code for each exercise in your favorite text editor or IDE.</li>
+            <li>Save the code in a .py file, e.g., exercises.py</li>
+            <li>Run the Python file using the Python interpreter.</li>
+            <li>Observe the outputs and verify that the results match the expected outputs mentioned in each exercise.</li>
+            <li>Modify the code as needed to achieve the desired results.</li>
+            <li>Have fun and experiment with different string manipulation techniques!</li>
+        </ol>
+    </p>
+    <h3>Advanced Exercises:</h3>
+    <ol>
+        <li>
+            <strong>Title Capitalization:</strong>
+            <pre class="exercises">
+                Input: "hello world, how are you?"
+                Output: "Hello World, How Are You?"
+            </pre>
+        </li>
+        <li>
+            <strong>Word Frequency Counter:</strong>
+            <pre class="exercises">
+                Input: "Python is a popular programming language. Python is versatile and powerful."
+                Output: {'Python': 2, 'is': 2, 'a': 1, 'popular': 1, 'programming': 1, 'language': 1, 'versatile': 1, 'and': 1, 'powerful': 1}
+            </pre>
+        </li>
+        <li>
+            <strong>Caesar Cipher Encryption and Decryption:</strong>
+            <pre class="exercises">
+                Input: "hello", Shift: 3
+                Output: "khoor"
+            </pre>
+        </li>
+        <li>
+            <strong>Password Generator:</strong>
+            <pre class="exercises">
+                Input: length = 12
+                Output: "aB2@yC#7zEf1"
+            </pre>
+        </li>
+        <li>
+            <strong>Word Reversal:</strong>
+            <pre class="exercises">
+                Input: "Hello World"
+                Output: "olleH dlroW"
+            </pre>
+        </li>
+        <li>
+            <strong>String Compression:</strong>
+            <pre class="exercises">
+                Input: "aaabbcccddddeee"
+                Output: "a3b2c3d4e3"
+            </pre>
+        </li>
+        <li>
+            <strong>Anagram Checker:</strong>
+            <pre class="exercises">
+                Input: "listen", "silent"
+                Output: True
+            </pre>
+        </li>
+    </ol>
+    <h2>Python string manipulation for beginners YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JXvrEOd1uhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="list_loops.html">Back to previous topic</a>
+        <a href="../phase3/phase3_intro.html">Next phase</a>
+    </div>
+</body>
+</html>

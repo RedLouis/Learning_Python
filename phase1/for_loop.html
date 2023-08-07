@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using the for Loop to Iterate Over Collections in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Using the for Loop to Iterate Over Collections in Python</h1>
+
+    <h2>The for Loop:</h2>
+    <p>
+        In Python, the <code>for</code> loop allows you to iterate over elements in a collection (such as a list, tuple, string, or dictionary) and perform operations on each item in the collection.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using a for loop to iterate over a list
+            numbers = [1, 2, 3, 4, 5]
+            for num in numbers:
+                print(num)
+
+            # Using a for loop to iterate over a string
+            message = "Hello"
+            for char in message:
+                print(char)
+
+            # Using a for loop to iterate over a dictionary
+            student_grades = {"Alice": 85, "Bob": 92, "Charlie": 78}
+            for name, grade in student_grades.items():
+                print(f"{name}: {grade}")
+
+            # Using a for loop with the range() function
+            for i in range(5):
+                print(i)
+
+            # Using a for loop to calculate the sum of a list of numbers
+            numbers = [1, 2, 3, 4, 5]
+            total = 0
+            for num in numbers:
+                total += num
+            print("Sum:", total)
+        </code>
+    </pre>
+
+    <h2>Nested Loops:</h2>
+    <p>
+        You can also nest `for` loops inside each other to perform more complex iterations and operations.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using nested for loops to create a multiplication table
+            for i in range(1, 6):
+                for j in range(1, 6):
+                    result = i * j
+                    print(f"{i} x {j} = {result}")
+        </code>
+    </pre>
+
+    <p>
+        The `for` loop is a versatile tool for iterating over collections and performing actions on each element, making it a fundamental construct in Python programming.
+    </p>
+    <h2>For Loops in Python YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zmIdC0_0BgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="while_loop.html">Back to previous topic</a>
+        <a href="understanding_comparison_operators.html">Next topic</a>
+    </div>
+</body>
+</html>

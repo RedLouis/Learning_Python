@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passing Arguments to Functions and Returning Values in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Passing Arguments to Functions and Returning Values in Python</h1>
+
+    <h2>Function Arguments:</h2>
+    <p>
+        Functions in Python can accept arguments, which are values passed to the function when it is called. These arguments provide data to the function, allowing it to perform specific tasks based on the provided values.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Function with arguments
+            def greet(name):
+                print("Hello, " + name + "!")
+
+            # Function with multiple arguments
+            def add(a, b):
+                return a + b
+        </code>
+    </pre>
+
+    <h2>Calling Functions with Arguments:</h2>
+    <p>
+        When calling a function that takes arguments, you provide the values for those arguments inside the parentheses.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Calling the greet() function with an argument
+            greet("Alice")
+
+            # Calling the add() function with arguments
+            result = add(5, 3)
+            print("Sum:", result)
+        </code>
+    </pre>
+
+    <h2>Returning Values:</h2>
+    <p>
+        Functions can also return values using the <code>return</code> keyword. The <code>return</code> statement specifies the value that the function should return to the caller. The function can then be used in expressions or assigned to variables.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Function with return value
+            def square(x):
+                return x * x
+
+            # Calling the square() function and using the returned value
+            num = 4
+            squared_num = square(num)
+            print("Square of", num, "is", squared_num)
+        </code>
+    </pre>
+
+    <h2>Multiple Return Values:</h2>
+    <p>
+        Python functions can return multiple values by separating them with commas in the <code>return</code> statement. The returned values are treated as a tuple, and you can unpack them into individual variables.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Function with multiple return values
+            def min_max(numbers):
+                return min(numbers), max(numbers)
+
+            # Calling the min_max() function and unpacking the returned values
+            numbers_list = [10, 5, 20, 15]
+            min_val, max_val = min_max(numbers_list)
+            print("Minimum value:", min_val)
+            print("Maximum value:", max_val)
+        </code>
+    </pre>
+
+    <p>
+        Passing arguments to functions and returning values allow you to create more flexible and powerful functions that can perform different tasks based on input and provide useful results for further processing.
+    </p>
+    <h2>Using Functions in Python YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WRI4fXDIXWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="define_call_functions.html">Back to previous topic</a>
+        <a href="comments.html">Next topic</a>
+    </div>
+</body>
+</html>

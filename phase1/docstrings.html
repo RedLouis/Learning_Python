@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generating Function and Code Documentation using Docstrings in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Generating Function and Code Documentation using Docstrings in Python</h1>
+
+    <h2>What are Docstrings?</h2>
+    <p>
+        Docstrings are used in Python to provide documentation for modules, classes, functions, and methods. They are enclosed in triple quotes (<code>'''</code> or <code>"""</code>) and placed as the first statement within these entities. Docstrings help in generating automatic documentation and can be accessed using various tools and libraries.
+    </p>
+    <pre class="exercises">
+        <code>
+            def add(a, b):
+                """
+                This function takes two arguments and returns their sum.
+
+                Parameters:
+                    a (int): The first number to be added.
+                    b (int): The second number to be added.
+
+                Returns:
+                    int: The sum of the two numbers.
+                """
+                return a + b
+
+            class Calculator:
+                """
+                This class represents a simple calculator.
+
+                Methods:
+                    add(a, b): Returns the sum of two numbers.
+                    subtract(a, b): Returns the difference of two numbers.
+                """
+                def add(self, a, b):
+                    """Return the sum of two numbers."""
+                    return a + b
+
+                def subtract(self, a, b):
+                    """Return the difference of two numbers."""
+                    return a - b
+        </code>
+    </pre>
+
+    <h2>Accessing Docstrings:</h2>
+    <p>
+        You can access docstrings using the <code>__doc__</code> attribute of the function, class, or module.
+    </p>
+    <pre class="exercises">
+        <code>
+            print(add.__doc__)
+
+            calc = Calculator()
+            print(calc.add.__doc__)
+            print(calc.subtract.__doc__)
+        </code>
+    </pre>
+
+    <h2>Generating Documentation:</h2>
+    <p>
+        Docstrings can be used to generate documentation automatically using tools like <code>pydoc</code> and <code>sphinx</code>. The generated documentation can be in various formats, such as HTML, PDF, or plain text.
+    </p>
+
+    <p>
+        By including docstrings in your code, you improve code readability and provide essential documentation to fellow developers who might use or maintain your code.
+    </p>
+    <h2>Python Docstrings | Python Best Practices YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0YUdYk5E-w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="comments.html">Back to previous topic</a>
+        <a href="common_errors.html">Next topic</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dictionaries and Sets in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h2>Dictionaries and Sets in Python</h2>
+    <p>
+        Dictionaries and sets are important data structures in Python that expand your data manipulation capabilities.
+    </p>
+
+    <h3>Dictionaries (Key-Value Pairs):</h3>
+    <p>
+        A dictionary is an unordered collection of key-value pairs. You can access values in a dictionary using their corresponding keys.
+    </p>
+    <pre class="code-example">
+        <code>
+            # Example of a dictionary
+            person = {
+                "name": "John Doe",
+                "age": 30,
+                "city": "New York"
+            }
+
+            # Accessing values using keys
+            print(person["name"])  # Output: John Doe
+            print(person["age"])   # Output: 30
+            print(person["city"])  # Output: New York
+        </code>
+    </pre>
+
+    <h3>Sets (Unordered Collection with Unique Elements):</h3>
+    <p>
+        A set is an unordered collection of unique elements. It does not allow duplicate values.
+    </p>
+    <pre class="code-example">
+        <code>
+            # Example of a set
+            fruits = {"apple", "banana", "orange", "apple"}
+
+            # Note that duplicate values are automatically removed
+            print(fruits)  # Output: {'apple', 'banana', 'orange'}
+        </code>
+    </pre>
+
+    <h3>Dictionaries and Sets Exercise:</h3>
+    <p>
+        Exercise: Given a list of numbers, create a dictionary with the number as the key and its square as the value. Then, convert the dictionary values into a set and print the unique squares.
+        <br>Follow these steps to work on the exercise:
+        <ol>
+            <li>Create a list of numbers with some duplicates, for example, [1, 2, 3, 4, 5, 3].</li>
+            <li>Write a Python script to create a dictionary where each number is a key, and its square is the corresponding value.</li>
+            <li>Use the set() function to convert the dictionary values into a set of unique squares.</li>
+            <li>Print the original list of numbers, the dictionary of number-squares, and the unique squares in the set.</li>
+            <li>Run your Python script and verify the results.</li>
+        </ol>
+    </p>
+    <pre class="code-example">
+        <code>
+            # Exercise: Creating a dictionary and converting values into a set
+            numbers = [1, 2, 3, 4, 5, 3]
+            squares_dict = {num: num ** 2 for num in numbers}
+            squares_set = set(squares_dict.values())
+
+            print("Original List of Numbers:", numbers)
+            print("Dictionary of Number-Squares:", squares_dict)
+            print("Unique Squares in Set:", squares_set)
+        </code>
+    </pre>
+
+    <p>
+        Dictionaries and sets are powerful data structures that enable efficient data manipulation and ensure uniqueness in the case of sets. Practice working with dictionaries and sets to enhance your data processing skills in Python.
+    </p>
+    <h2>Python Sets And Dictionaries YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WA_JDDaaMe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="exception_handling.html">Back to previous topic</a>
+        <a href="oop.html">Next topic</a>
+    </div>
+    
+</body>
+</html>

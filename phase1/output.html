@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Printing Output with <code>print()</code></title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Printing Output with <code>print()</code></h1>
+
+    <h2>Using <code>print()</code> to Display Output:</h2>
+    <p>
+        In Python, the <code>print()</code> function is used to display output to the console. You can print strings, numbers, variables, and more. The <code>print()</code> function automatically adds a new line after each call, but you can change this behavior using the "end" parameter.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Printing a simple message
+            print("Hello, World!")
+
+            # Printing variables
+            name = "Alice"
+            age = 30
+            print("Name:", name, "Age:", age)
+
+            # Printing numbers
+            x = 10
+            y = 20
+            sum = x + y
+            print("Sum of", x, "and", y, "is", sum)
+
+            # Customizing the end parameter
+            print("Hello", end=" ")
+            print("World!")
+        </code>
+    </pre>
+
+    <h2>Formatting Output:</h2>
+    <p>
+        You can format the output using string formatting methods such as f-strings or the <code>format()</code> method. These methods allow you to embed variables and expressions within the printed text.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using f-strings
+            name = "Bob"
+            age = 25
+            print(f"My name is {name} and I am {age} years old.")
+
+            # Using the format() method
+            item = "book"
+            price = 19.99
+            print("The {} costs ${:.2f}".format(item, price))
+        </code>
+    </pre>
+
+    <h2>Multiple Arguments with <code>print()</code>:</h2>
+    <p>
+        The <code>print()</code> function can take multiple arguments separated by commas. It will print each argument with a space in between. You can use this feature to print multiple items on the same line.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Printing multiple items on the same line
+            name = "Charlie"
+            age = 35
+            city = "New York"
+            print(name, age, city, "are friends.")
+        </code>
+    </pre>
+
+    <p>
+        The <code>print()</code> function is a versatile tool for displaying output and helps you see the results of your Python code.
+    </p>
+    <h2>Printing to the Console in Python YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/C-XntHnqd4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="user_input.html">Back to previous topic</a>
+        <a href="arithmetic_operators.html">Next topic</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combining Conditions using Logical Operators in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Combining Conditions using Logical Operators in Python</h1>
+
+    <h2>Logical Operators:</h2>
+    <p>
+        Logical operators in Python can be used to combine multiple conditions and evaluate their truth value. The three main logical operators are <code>and</code>, <code>or</code>, and <code>not</code>. They are often used to create more complex conditions and control the flow of your Python programs based on multiple criteria.
+    </p>
+
+    <h2>Examples:</h2>
+    <p>
+        Let's see some examples of combining conditions using logical operators in Python:
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using 'and' operator
+            age = 25
+            is_student = True
+
+            if age >= 18 and is_student:
+                print("You are an adult student.")
+            else:
+                print("You are either not an adult or not a student.")
+
+            # Using 'or' operator
+            is_raining = False
+            is_sunny = True
+
+            if is_raining or is_sunny:
+                print("The weather is either rainy or sunny.")
+            else:
+                print("The weather is neither rainy nor sunny.")
+
+            # Using 'not' operator
+            is_logged_in = False
+
+            if not is_logged_in:
+                print("Please log in to access the content.")
+            else:
+                print("Welcome! You have access to the content.")
+        </code>
+    </pre>
+
+    <h2>Nested Conditions:</h2>
+    <p>
+        You can also nest conditions inside each other to create more complex logic and decision-making in your Python programs.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using nested conditions with logical operators
+            age = 22
+            is_student = False
+
+            if age >= 18:
+                if is_student:
+                    print("You are an adult student.")
+                else:
+                    print("You are an adult, but not a student.")
+            else:
+                print("You are not an adult.")
+
+            # Using parentheses for clarity
+            x = 10
+            y = 20
+            z = 30
+
+            if (x > y) and (y < z):
+                print("Both conditions are true.")
+            else:
+                print("At least one condition is false.")
+        </code>
+    </pre>
+
+    <p>
+        Combining conditions using logical operators is fundamental for creating flexible and robust Python programs that can handle various scenarios and user input effectively.
+    </p>
+    <h2>Python Logical Operators (the fun stuff!!) YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nD1REhS6e3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="understanding_logical_operators.html">Back to previous topic</a>
+        <a href="understanding_membership_operarors.html">Next topic</a>
+    </div>
+</body>
+</html>

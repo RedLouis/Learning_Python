@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concatenating Strings with the + Operator in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Concatenating Strings with the + Operator in Python</h1>
+
+    <h2>Concatenating Strings:</h2>
+    <p>
+        In Python, you can concatenate (combine) strings using the `+` operator. The `+` operator allows you to join two or more strings together, creating a single string containing the combined contents of the individual strings.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Concatenating strings
+            first_name = "John"
+            last_name = "Doe"
+            full_name = first_name + " " + last_name
+            print("Full Name:", full_name)
+
+            # Concatenating strings with literals
+            greeting = "Hello, " + "World!"
+            print(greeting)
+
+            # Concatenating strings with variables and literals
+            fruit = "apple"
+            quantity = 3
+            order_summary = "You ordered " + str(quantity) + " " + fruit + "s."
+            print(order_summary)
+        </code>
+    </pre>
+
+    <h2>Using the `+=` Operator:</h2>
+    <p>
+        Python also supports the `+=` operator, which is a shorthand for concatenating strings. It updates the value of the original string by adding the new string to it.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using the `+=` operator
+            message = "Hello, "
+            name = "Alice"
+            message += name
+            print(message)
+
+            # Concatenating strings with `+=` and literals
+            result = "The answer is: "
+            answer = 42
+            result += str(answer)
+            print(result)
+        </code>
+    </pre>
+
+    <p>
+        Understanding string concatenation with the `+` operator allows you to build dynamic strings and construct messages in your Python programs.
+    </p>
+    <h2>String Concatenation YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/28FUVmWU_fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="calculations.html">Back to previous topic</a>
+        <a href="string_methods.html">Next topic</a>
+    </div>
+</body>
+</html>

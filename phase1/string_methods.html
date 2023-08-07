@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using String Methods in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Using String Methods in Python</h1>
+
+    <h2>Common String Methods:</h2>
+    <p>
+        Python provides several built-in string methods that allow you to manipulate and transform strings. Here are some common string methods:
+    </p>
+    <ul>
+        <li><code>.upper()</code>: Converts the string to uppercase.</li>
+        <li><code>.lower()</code>: Converts the string to lowercase.</li>
+        <li><code>.capitalize()</code>: Converts the first character of the string to uppercase and the rest to lowercase.</li>
+        <li><code>.title()</code>: Converts the first character of each word in the string to uppercase.</li>
+        <li><code>.replace(old, new)</code>: Replaces occurrences of the "old" substring with the "new" substring.</li>
+        <li><code>.strip()</code>: Removes leading and trailing whitespace from the string.</li>
+        <li><code>.split()</code>: Splits the string into a list of substrings based on a specified delimiter.</li>
+        <li><code>.join(iterable)</code>: Joins the elements of an iterable (e.g., list, tuple) into a string using the string as the delimiter.</li>
+    </ul>
+
+    <h2>Examples:</h2>
+    <p>
+        Let's see some examples of using string methods in Python:
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using .upper()
+            message = "hello, world!"
+            print(message.upper())
+
+            # Using .lower()
+            name = "John Doe"
+            print(name.lower())
+
+            # Using .capitalize()
+            sentence = "python is fun"
+            print(sentence.capitalize())
+
+            # Using .title()
+            title = "programming in python"
+            print(title.title())
+
+            # Using .replace()
+            sentence = "I like apples."
+            new_sentence = sentence.replace("apples", "bananas")
+            print(new_sentence)
+
+            # Using .strip()
+            text = "   Hello, World!   "
+            print(text.strip())
+
+            # Using .split()
+            fruits = "apple, banana, cherry"
+            fruit_list = fruits.split(", ")
+            print(fruit_list)
+
+            # Using .join()
+            words = ["Python", "is", "fun"]
+            sentence = " ".join(words)
+            print(sentence)
+        </code>
+    </pre>
+
+    <p>
+        Using string methods in Python allows you to manipulate and transform strings easily, making your code more powerful and versatile.
+    </p>
+    <h2>String Methods YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ERww7FiLrqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="concatenating_strings.html">Back to previous topic</a>
+        <a href="conditional_statements.html">Next topic</a>
+    </div>
+</body>
+</html>

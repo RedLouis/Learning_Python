@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using the while Loop for Repetitive Tasks in Python</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Using the while Loop for Repetitive Tasks in Python</h1>
+
+    <h2>The while Loop:</h2>
+    <p>
+        In Python, the <code>while</code> loop allows you to repeatedly execute a block of code as long as a certain condition is true. The loop continues iterating as long as the condition remains true.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using a while loop to count from 1 to 5
+            count = 1
+            while count <= 5:
+                print(count)
+                count += 1
+
+            # Using a while loop with user input
+            password = "secret"
+            input_password = input("Enter the password: ")
+            while input_password != password:
+                print("Incorrect password. Try again.")
+                input_password = input("Enter the password: ")
+            print("Welcome! Access granted.")
+
+            # Using a while loop for indefinite repetition
+            running = True
+            while running:
+                user_input = input("Enter a command (quit to exit): ")
+                if user_input == "quit":
+                    running = False
+                else:
+                    print("Executing:", user_input)
+        </code>
+    </pre>
+
+    <h2>Control Flow:</h2>
+    <p>
+        It's important to ensure that the condition within the <code>while</code> loop eventually becomes false; otherwise, the loop will run indefinitely (an infinite loop) and may crash your program.
+    </p>
+
+    <h2>Break Statement:</h2>
+    <p>
+        You can use the <code>break</code> statement to exit the loop prematurely when a certain condition is met.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Using break to exit the loop
+            count = 1
+            while True:
+                print(count)
+                count += 1
+                if count > 5:
+                    break
+        </code>
+    </pre>
+
+    <p>
+        The <code>while</code> loop is a powerful tool for performing repetitive tasks in Python, and you should use it judiciously to avoid infinite loops and ensure efficient code execution.
+    </p>
+    <h2>While Loops in Python YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ECduJk00mUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="decision_making.html">Back to previous topic</a>
+        <a href="for_loop.html">Next topic</a>
+    </div>
+</body>
+</html>

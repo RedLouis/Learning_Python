@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Common Errors in Python and How to Fix Them</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Common Errors in Python and How to Fix Them</h1>
+
+    <h2>1. SyntaxError:</h2>
+    <p>
+        Syntax errors occur when the Python interpreter encounters code that does not follow the correct syntax rules of the language. The most common causes of syntax errors are missing parentheses, incorrect indentation, or invalid characters.
+    </p>
+
+    <h3>Example:</h3>
+    <pre class="exercises">
+        <code>
+            # SyntaxError: Missing closing parenthesis
+            print("Hello, world!"
+        </code>
+    </pre>
+
+    <h3>Fix:</h3>
+    <pre class="exercises">
+        <code>
+            # Add a closing parenthesis
+            print("Hello, world!")
+        </code>
+    </pre>
+
+    <h2>2. NameError:</h2>
+    <p>
+        Name errors occur when you try to use a variable or a function that has not been defined or is out of scope.
+    </p>
+
+    <h3>Example:</h3>
+    <pre class="exercises">
+        <code>
+            # NameError: 'x' is not defined
+            result = x + 5
+        </code>
+    </pre>
+
+    <h3>Fix:</h3>
+    <pre class="exercises">
+        <code>
+            # Define the variable 'x' before using it
+            x = 10
+            result = x + 5
+        </code>
+    </pre>
+
+    <h2>3. IndentationError:</h2>
+    <p>
+        Indentation errors occur when the code is not indented properly, typically within a block of code such as a loop or a function definition.
+    </p>
+
+    <h3>Example:</h3>
+    <pre class="exercises">
+        <code>
+            # IndentationError: unexpected indent
+            for i in range(5):
+            print(i)
+        </code>
+    </pre>
+
+    <h3>Fix:</h3>
+    <pre class="exercises">
+        <code>
+            # Indent the 'print' statement to match the 'for' loop
+            for i in range(5):
+                print(i)
+        </code>
+    </pre>
+
+    <h2>4. TypeError:</h2>
+    <p>
+        Type errors occur when you perform an operation on incompatible data types or pass the wrong number of arguments to a function.
+    </p>
+
+    <h3>Example:</h3>
+    <pre class="exercises">
+        <code>
+            # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+            result = 5 + "hello"
+        </code>
+    </pre>
+
+    <h3>Fix:</h3>
+    <pre class="exercises">
+        <code>
+            # Convert the integer to a string before concatenating
+            result = str(5) + "hello"
+        </code>
+    </pre>
+
+    <p>
+        Understanding common errors and knowing how to fix them is essential for debugging and maintaining your Python code effectively.
+    </p>
+    <h2>TOP 10 Most Common ERRORS In Python And How To FIX Them YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1JieJ5rgOLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="docstrings.html">Back to previous topic</a>
+        <a href="print_debugging.html">Next topic</a>
+    </div>
+</body>
+</html>

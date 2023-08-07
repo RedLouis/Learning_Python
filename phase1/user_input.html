@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using input() to Get User Input</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Using <code>input()</code> to Get User Input</h1>
+
+    <h2>Getting User Input:</h2>
+    <p>
+        In Python, you can use the <code>input()</code> function to prompt the user for input. The <code>input()</code> function displays a message to the user and waits for them to enter text. The entered text is returned as a string.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Basic example
+            name = input("Enter your name: ")
+            print("Hello, " + name + "!")
+
+            # You can also use input() without a prompt
+            age = input("Enter your age: ")
+            print("You are " + age + " years old.")
+        </code>
+    </pre>
+
+    <h2>Converting User Input to Other Data Types:</h2>
+    <p>
+        The <code>input()</code> function returns user input as a string. If you need to use the input as a different data type, like an integer or a float, you can convert it using functions like <code>int()</code> or <code>float()</code>.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Converting user input to an integer
+            num1 = int(input("Enter a number: "))
+            num2 = int(input("Enter another number: "))
+            result = num1 + num2
+            print("The sum is:", result)
+
+            # Converting user input to a float
+            price = float(input("Enter the price: "))
+            quantity = int(input("Enter the quantity: "))
+            total = price * quantity
+            print("Total cost:", total)
+        </code>
+    </pre>
+
+    <h2>Handling User Input:</h2>
+    <p>
+        When using <code>input()</code>, it's essential to handle user input carefully. For example, if you expect an integer input, you should validate the input to avoid errors. You can use loops and conditionals to handle various scenarios.
+    </p>
+    <pre class="exercises">
+        <code>
+            # Handling invalid input with a while loop
+            valid_input = False
+            while not valid_input:
+                try:
+                    age = int(input("Enter your age: "))
+                    if age < 0:
+                        print("Please enter a positive number.")
+                    else:
+                        valid_input = True
+                except ValueError:
+                    print("Invalid input. Please enter a valid integer.")
+            print("Your age is:", age)
+        </code>
+    </pre>
+
+    <p>
+        Using <code>input()</code> to get user input makes your Python programs interactive and allows users to provide dynamic data to your applications.
+    </p>
+    <h2>The Python Input Function YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/47ujebGLMKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navigation-links">
+        <a href="datatypes.html">Back to previous topic</a>
+        <a href="output.html">Next topic</a>
+    </div>
+</body>
+</html>

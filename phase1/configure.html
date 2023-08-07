@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuring Python Environment and PATH</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="../learning_python.html">Learning Plan</a>
+        <a href="../phase1/phase1_intro.html">Phase 1</a>
+        <a href="../phase2/phase2_intro.html">Phase 2</a>
+        <a href="../phase3/phase3_intro.html">Phase 3</a>
+        <a href="../phase4/phase4_intro.html">Phase 4</a>
+        <a href="../phase5/phase5_intro.html">Phase 5</a>
+        <a href="../careerpaths/careerpath_intro.html">Career Paths</a>
+        <a href="../misc/courses.html">Courses</a>
+        <a href="../misc/other_resources.html">Other resources</a>
+        <a href="../misc/about.html">About..</a>
+    
+    </nav>
+    <h1>Configuring Python Environment and PATH</h1>
+
+    <h2>Python Environment</h2>
+    <p>
+        The Python environment consists of the Python interpreter and the standard library, which includes built-in modules and functions. Additionally, you can install external libraries and packages to extend Python's capabilities for various tasks like web development, data analysis, machine learning, and more.
+    </p>
+
+    <h2>Python Interpreter</h2>
+    <p>
+        The Python interpreter is the program responsible for executing Python code. When you run a Python script or enter Python commands in the terminal, the interpreter reads and executes the code line by line. Having the Python interpreter correctly installed on your system is crucial for running Python code.
+    </p>
+
+    <h2>PATH</h2>
+    <p>
+        The PATH environment variable is a list of directories that your operating system searches when you enter a command in the terminal or command prompt. By adding the path to the Python interpreter in the PATH variable, you enable your system to locate and run Python from any directory in the terminal.
+    </p>
+
+    <h2>How to Configure Python Environment and PATH</h2>
+    <ol>
+        <li>
+            <strong>Install Python:</strong> Download the Python installer for your operating system from the official Python website (<a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>) and run it to install Python on your machine.
+        </li>
+        <li>
+            <strong>Check Python Installation:</strong> After installation, open the terminal (or command prompt) and type <code>python --version</code> to verify that Python is correctly installed and displays the installed version.
+        </li>
+        <li>
+            <strong>Adding Python to PATH:</strong> 
+            <ul>
+                <li><strong>Windows:</strong> During the installation process, you can select the option "Add Python X.X to PATH" to automatically add Python to the system PATH. If you missed this option, you can manually add Python to the PATH by editing the system environment variables.</li>
+                <li><strong>macOS and Linux:</strong> Python is usually added to the PATH by default during installation. If not, you can manually edit your shell profile (e.g., <code>.bashrc</code> or <code>.bash_profile</code> for Bash) and add the appropriate export statement.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Virtual Environments:</strong> It's recommended to use virtual environments to manage Python dependencies for different projects. Virtual environments create isolated Python environments where you can install specific packages without affecting the system-wide Python installation. You can use tools like <code>virtualenv</code> or Python's built-in <code>venv</code> module to create and manage virtual environments.
+        </li>
+    </ol>
+
+    <p>By configuring the Python environment and PATH, you ensure that your Python development environment is set up correctly, and you can smoothly run Python code and work on various Python projects. Always remember to keep your Python installation and libraries up to date to take advantage of the latest features and improvements.</p>
+    <div class="navigation-links">
+        <a href="install.html">Back to previous topic</a>
+        <a href="understanding_repl.html">Next topic</a>
+    </div>
+</body>
+</html>

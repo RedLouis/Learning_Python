@@ -1,0 +1,107 @@
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            color: #004466;
+        }
+
+        h2 {
+            color: #006699;
+            margin-top: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #0099cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .phase-list {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+             
+        .exercises {
+            background-color: black;
+            color: white;
+        }
+
+        pre.code-example {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: "Courier New", monospace;
+            white-space: pre-wrap;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            line-height: 1.5;
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+          
+          pre.code-example code {
+            color: #333;
+          }
+
+          nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+        }
+
+        nav ul li {
+            padding: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-top: 1px solid #ccc;
+        }
+        
+        .navigation-links a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+        
+        .navigation-links a:hover {
+            background-color: #ddd;
+        }
